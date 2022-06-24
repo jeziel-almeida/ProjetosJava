@@ -17,20 +17,22 @@ public class TesteExcecaoImplicita {
 			System.out.println("Entre com o divisor: ");
 			divisor = s.nextInt();
 			
+			//quociente = dividendo / divisor;
+
 			try {
-				//LAN«ANDO MANUALMENTE UMA EXCE«√O IMPLÕCITA
+				//LAN√áANDO MANUALMENTE UMA EXCE√á√ÉO IMPL√çCITA
 				if(divisor == 0) {
 					throw new ArithmeticException("Divisor nulo.");
 				}
 				quociente = dividendo / divisor;
 				
 			} catch(Exception e) {
-				System.out.println("Erro: Divis„o por zero! "+e.getMessage());
+				System.out.println("Erro: Divis√£o por zero! "+e.getMessage());
 			} finally {
 				System.out.println("Bloco finally");
 			}
 			
-			System.out.println("O quociente È: "+quociente);
+			System.out.println("O quociente √©: "+quociente);
 			System.out.println("Repetir? ");
 			controle = s.next().toString();
 			
